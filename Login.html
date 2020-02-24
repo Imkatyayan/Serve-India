@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Registration form</title>
+<style>
+
+body{
+	display: flex;
+	flex-wrap: wrap;
+background-image:url(blurr.jpeg) ;
+background-size: cover;
+		background-position: center;
+		max-width: 100%;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: auto;
+		background-attachment: fixed;
+}
+.wrap{
+	display: flex;
+	flex-wrap: wrap;
+background-color:black;
+padding:50px 40px;
+  position:center;
+  margin-left: 400px;
+  margin-right: 450px;
+  margin-top : 50px;
+  margin-bottom: 50px;
+opacity:0.8;
+}
+form{
+padding:10px;
+font-family:arial;
+margin:10px;
+}
+h2{
+text-align:center;
+background:orange;
+color:white;
+padding:10px;
+border-radius:10px;
+}
+input{
+padding:10px;
+margin:5px;
+border-radius:5px;
+border:none;
+}
+input[type=text],input[type=email],input[type=number],input[type=password]{
+width:90%;
+
+}
+input[type=submit]{
+width:40%;
+background:orange;
+cursor:pointer;
+font-size:18px;
+font-weight:bold;
+color:white;
+transition: background-color 0.5s, color0.5s;
+}
+input[type=submit]:hover{
+background:green;
+}
+h2{
+color:White;
+}
+form{
+color:white;
+}
+.button{
+	width:40%;
+	background:orange;
+	cursor:pointer;
+	font-size:18px;
+	font-weight:bold;
+	color:white;
+transition: background-color 0.5s, color0.5s;
+}
+.button:hover{
+
+	background:green;
+}
+.fa-home{
+	background-color: orange;
+	color: white;
+	padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+	transition: background-color 0.5s, color0.5s;
+}
+.fa:hover{
+
+	background-color: green;
+}
+</style>
+</head>
+<body>
+<header>
+	<a href="home.html"><i class="fa fa-home"></a></i>
+</header>
+<div class ="wrap">
+<form action="action.php">
+<h2> User Login</h2>
+<input type ="text" name ="Yourname" placeholder="Username" required autofocus>
+<input type ="password" name ="Yourname" placeholder="Password" required>
+<input type="checkbox"> Remember me
+<a href="#" style=" margin-left:105px">Forgot Password?</a>
+
+<input type="submit" value ="Login">
+<a href="Register_As.html" style="margin-right:40px">
+<input type="button" class="button" value ="Signup" ></a>
+</form>
+
+</div>
+</body>
+</html>

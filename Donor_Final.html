@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Registration form</title>
+<style>
+body{
+background-image:url(blurr.jpeg) ;
+background-size: cover;
+		background-position: center;
+		max-width: 100%;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 100%;
+		background-attachment: fixed;
+}
+.wrap{
+width:500px;
+margin:auto;
+background-color:black;
+margin-top:50px;
+padding:5px;
+opacity:0.8;
+}
+form{
+padding:10px;
+font-family:arial;
+
+margin:10px;
+}
+h2{
+text-align:center;
+background:orange;
+color:white;
+padding:10px;
+border-radius:10px;
+}
+input{
+padding:10px;
+margin:5px;
+border-radius:5px;
+border:none;
+}
+input[type=text],input[type=email],input[type=number],input[type=password]{
+width:90%;
+
+}
+input[type=submit]{
+width:95%;
+background:orange;
+cursor:pointer;
+font-size:18px;
+font-weight:bold;
+color:white;
+}
+input[type=submit]:hover{
+background:green;
+}
+select{
+padding:10px;
+width:32%;
+border-radius:5px;
+}
+h2{
+color:White;
+}
+form{
+color:white;
+}
+
+.fa-home{
+	background-color: orange;
+	color: white;
+	padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+	transition: background-color 0.5s, color0.5s;
+}
+.fa:hover{
+	background-color: green;
+}
+
+
+</style>
+
+
+</head>
+<body>
+	<a href="home.html"> <i class="fa fa-home"></a></i>
+<div class ="wrap">
+<form>
+<h2> Registration Form </h2>
+<input type ="text" name ="Yourname" placeholder="Your Name" required autofocus>
+<input type ="email" name ="email" placeholder="Your Email" required>
+<input type ="tel" name ="tel" placeholder="Mobile No" maxlength = "10" style="width:90%" required>
+<input type = "text" name = "text" placeholder="Username" required>
+<input type ="password" name ="Yourname" placeholder="Password" required>
+<input type ="password" name ="confirm password" placeholder="Confirm Password" required>
+<input type ="text" name ="Adhar No" placeholder="Adhar No" required>
+<br>
+<span style ="font-size:18px;">Date of Birth</span>
+<br>
+<select name="DoBday">
+<option>Month</option>
+<option value="january">January</option>
+<option value="February">February</option>
+<option value="February">March</option>
+<option value="February">April</option>
+<option value="February">May</option>
+<option value="February">June</option>
+<option value="February">July</option>
+<option value="February">August</option>
+<option value="February">september</option>
+<option value="February">October</option>
+<option value="February">November</option>
+<option value="February">December</option>
+</select>
+<select name="DoBdate">
+<option>Day</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+<select name="DoYear">
+<option>Year</option>
+<option value="2000">2000</option>
+<option value="1999">1999</option>
+<option value="1998">1998</option>
+<option value="1997">1997</option>
+<option value="1996">1996</option>
+<option value="1995">1995</option>
+<option value="1994">1994</option>
+<option value="1993">1993</option>
+<option value="1992">1992</option>
+<option value="1991">1991</option>
+<option value="1990">1990</option>
+<option value="1989">1989</option>
+<option value="1988">1988</option>
+<option value="1987">1987</option>
+<option value="1986">1986</option>
+<option value="1985">1985</option>
+<option value="1984">1984</option>
+<option value="1983">1983</option>
+<option value="1982">1982</option>
+</select>
+<br>
+<br>
+
+<input type="radio" name="gender" value="male" checked> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="other">Other
+<br>
+<input type="checkbox"> I Agree To The Terms and Conditions
+<br>
+<input type="submit" value ="Submit">
+</form>
+</div>
+</body>
+</html>

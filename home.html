@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="Prakhar's Code/grid.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>SERVE</title>
+  <style>
+    html{
+background-color: #fff;
+color: #555;
+font-family: 'Arial';
+font-weight:300;
+font-size:20px;
+text-rendering : optimizeLegibility;
+    }
+    .row {
+      width : 1140px;
+      max-width: 0 auto;
+    }
+body {
+
+margin : 0;
+padding : 0;
+box-size: border-box;
+}
+header{
+  background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) ,url(child2.jpeg);
+  background-size : cover;
+  background-position: center;
+  height : 100vh;
+}
+
+
+.section-donors{
+/*  background-color: #424242; */
+  background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) ,url(donor2.jpg);
+  background-size : cover;
+  background-position: center;
+  height: 100vh;
+}
+/*
+.btn{
+  font-family: 'Airal';
+  border-radius:200px;
+  border:none;
+
+  cursor:pointer;
+  font-size:20px;
+  font-weight:bold;
+  padding : 5px 30px;
+  font-weight : 300;
+  color:white;
+text-decoration: none;
+margin-right: 500px;
+transition: background-color 0.5s , color 0.5s;
+}
+*/
+.btn-donor{
+border: 1px solid white;
+}
+.btn-receiver{
+    border: 1px solid white;
+  /*  background: #ff6700; */
+}
+
+
+.section-help{
+
+  background-image:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)) ,url(help.jpg);
+  background-size : cover;
+  background-position: center;
+  height: 150vh;
+}
+
+h1{
+color : #fff;
+  margin-top : 0;
+  margin-bottom: 20px;
+padding-top: 200px;
+padding-left: 200px;
+  font-size : 240%;
+  font-weight: 300;
+  letter-spacing : 1px;
+  word-spacing: 3px;
+text-transform: uppercase;
+
+  </optgroup>
+}
+
+h3{
+  color: white;
+  text-transform: uppercase;
+  font-family: "Airal";
+}
+h3:after{
+  display: block;
+  height: 2px;
+  background-color: #ff6700;
+  content: " ";
+  width: 150px;
+
+  margin-top: 10px;
+}
+h2{
+  color:  #ff6700;
+  text-align: center;
+  text-transform: uppercase;
+word-spacing: 2px;
+padding-left: 80px;
+padding-top: 35px;
+}
+h2:after{
+  display: block;
+  height: 2px;
+  background-color: #ff6700;
+  content: " ";
+  width: 100px;
+  margin: auto auto;
+  margin-top: 20px;
+}
+h4{
+  color:  white;
+  text-align: center;
+  text-transform: uppercase;
+word-spacing: 2px;
+padding-left: 180px;
+padding-top: 35px;
+}
+h4:after{
+  display: block;
+  height: 2px;
+  background-color: #ff6700;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+h5{
+  color: black;
+  text-transform: uppercase;
+}
+p{
+color : #fff;
+line-height: 130%;
+font-size: 18px;
+}
+p1{
+  color: white;
+padding-left: 40px;
+line-height: 130%;
+}
+p3{
+  color: white;
+  padding-left: 30px;
+  line-height: 130%;
+  }
+h6{
+  color :  #ff6700;
+    margin-top : 0;
+    margin-bottom: 20px;
+  padding-top: 100px;
+  padding-left: 30px;
+    font-size : 240%;
+    font-weight: 300;
+    letter-spacing : 1px;
+    word-spacing: 3px;
+  text-transform: uppercase;
+}
+h6:after{
+  display: block;
+  height: 2px;
+  background-color:  #ff6700;
+  content: " ";
+  width: 100px;
+  margin: 0 0;
+margin-left: 30px;
+}
+
+text-box{
+  position: absolute;
+  width : 1140px;
+  top:50%;
+  left:50%;
+  text-transform: translate(-50%, -50%);
+}
+.btn{
+  font-family: 'Airal';
+  border-radius:200px;
+  border:none;
+
+  cursor:pointer;
+  font-size:20px;
+  font-weight:bold;
+  padding : 5px 30px;
+  font-weight : 300;
+  color:white;
+text-decoration: none;
+
+transition: background-color 0.5s , color 0.5s;
+}
+.btn-reg{
+  margin-left: 200px;
+    background: #ff6700;
+
+}
+.btn-log{
+  margin-left: 10px;
+  border:1px solid white;
+}
+.btn:hover{
+background-color: green;
+border: none;
+
+}
+.main-nav{
+float:right;
+list-style: none;
+margin-top:5px;
+
+
+}
+.main-nav li{
+  color: white;
+  display: inline-block;
+  margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+  padding: 8px 0;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  border-bottom:  1px solid  #ff6700;
+  transition: border-bottom 0.5s;
+  font-family: arial;
+
+}
+.main-nav li a:hover{
+  border-bottom: 1px solid green;
+}
+
+.sticky {
+position: fixed;
+top: 0;
+left : 0;
+width: 100%;
+background-color:#424242;
+ box-shadow: 0 4px 4px   #2C3539;
+z-index: 9999;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+  padding: 10px 0;
+  color: white;
+
+}
+
+.sticky .main-nav {display: block; }
+
+
+.section-features {
+  padding:0 75px;
+  background-color:#424242;
+transition-delay:  2.0s;
+
+}
+.long-copy{
+  line-height: 145%;
+  width: 80%;
+  margin-left: 15%;
+}
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+.box{
+
+}
+/*  GROUPING  ============================================================================= */
+
+.row {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+/* .sticky { display: none; } */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col {
+		/*margin: 1% 0 1% 0%;*/
+        margin: 0;
+	}
+}
+.span-4-of-4 {
+	width: 100%;
+}
+
+.span-3-of-4 {
+	width: 74.6%;
+}
+
+.span-2-of-4 {
+	width: 49.2%;
+}
+
+.span-1-of-4 {
+	width: 23.8%;
+}
+
+@media only screen and (max-width: 480px) {
+	.span-4-of-4 {
+		width: 100%;
+	}
+	.span-3-of-4 {
+		width: 100%;
+	}
+	.span-2-of-4 {
+		width: 100%;
+	}
+	.span-1-of-4 {
+		width: 100%;
+	}
+}
+
+.span-3-of-3 {
+	width: 100%;
+}
+
+.span-2-of-3 {
+	width: 66.13%;
+}
+
+.span-1-of-3 {
+	width: 32.26%;
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span-3-of-3 {
+		width: 100%;
+	}
+	.span-2-of-3 {
+		width: 100%;
+	}
+	.span-1-of-3 {
+		width: 100%;
+	}
+}
+
+footer{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  background-color: #16161d;
+
+}
+/* #2c3539 */
+.footer-nav{
+  list-style: none;
+  float: left;
+  text-decoration-line: none;
+}
+.social-links{
+  list-style: none;
+  float: none;
+}
+.social-links li{
+  display: inline;
+  margin-right: 10px;
+}
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 0px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-youtube {
+  background: black;
+  color: #bb0000;
+}
+
+.fa-instagram {
+  background:#bb0000;
+  color: white;
+}
+.fa-whatsapp {
+  background:  #25d366;
+  color: white;
+}
+
+.section-testimonials {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(quote.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(quote.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+height: 100vh;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.section-team{
+  padding:0 75px;
+  background-color: #424242;
+
+}
+
+.box img {
+  height: 150px;
+  width : 150px;
+ border-radius: 50%;
+ margin-right: 0px;
+ vertical-align: middle;
+}
+
+.team-feature {
+    margin-bottom: 5px;
+    padding-top: 5px;
+  line-height: 130%;
+    color: white;
+}
+.section-faculty{
+  padding:0 75px;
+background-color:  #424242;
+/*#2C3539*/
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  /*display: block;
+  width: 100%;
+  height: auto;
+ border-radius : 50%; */
+ height: 160px;
+border-radius: 50%;
+margin-right: 10px;
+padding-left: 10px;
+vertical-align: middle;
+}
+
+.overlay {
+border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  height: 110%;
+  width: 125%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: white;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: #ff6700;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+    </style>
+
+  </head>
+  <body>
+  <header>
+    <nav class="">
+<div class="row">
+  <ul class="main-nav">
+    <li><a href="#features">How this works</a></li>
+      <li><a href="#quotes">Our Stories</a></li>
+          <li><a href="#team">About Us</a></li>
+            <li><a href="#foot">Contact Us</a></li>
+  </ul>
+</div>
+  </nav>
+    <div class = "text-box">
+      <h1>Serving India.<br> Towards a better tomorrow</h1>
+      <a class="btn btn-reg"href="http://drupal-8-8-1-serve.dd:8083/user/register">Register</a>
+      <a class="btn btn-log"href="http://drupal-8-8-1-serve.dd:8083/">Login</a>
+      </div>
+      </header>
+
+      <section class="section-features js--section-features" id="features">
+            <div class="row">
+                <h2>service grant model &mdash; helping the deprived</h2>
+                <p class="long-copy">
+                  The project delivers fund to the talented people residing in rural areas deprived from quality education and opportunities due to poor financial background. This is a universal donation platform bridging the gap between the poor and rich sections of the society
+</p>
+            </div>
+
+            <div class="row js--wp-1">
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-infinite-outline icon-big"></i>
+                    <h3>Donor</h3>
+                    <p>
+People willing to help someone can register as donor on the platform and donate funds to the talented people deprived from opportunities due to lack of aid. The donor can help such people in attainment of their goals and to pave a path for a better tommorrow.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-stopwatch-outline icon-big"></i>
+                    <h3>Receiver</h3>
+                    <p>
+The people registering themselves as Receiver, seek help for quality education and opportunities so as to pave their path to success. Receiver will be directly geeting the funds into their bank account without the involvement of a middle-man.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-nutrition-outline icon-big"></i>
+                    <h3>working</h3>
+                    <p>
+          The donors can browse throught the receiver and shortlist the receivers matching their crateria and can transfer funds to their respective accounts. This will result in the direct transfer of funds in betwween the donor and the receiver, thus eradicating the chain of transfer causing corruption.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-cart-outline icon-big"></i>
+                    <h3>benefits</h3>
+                    <p>
+              The project provides transparency of fund transfer which results in lowering corruption across the nation. Avoiding involvement of any middle-man and any other organization, thus providing better and secure future for the generation.
+            </p>
+                </div>
+
+            </div>
+            <div class="row">
+              <h2>Our Vision</h2>
+            <p>
+Our goal is to connect needful rural people to people who are willing to help without a middle-man.where anyone can log on and look for help and anyone can log on and donate. The person donating the fund will browse through the web application filtering the authenticated receivers based on his/her preferences to fund the short listed candidates provided by this platform. In this platform people can register and serve the talented people in the rural areas and provide them with funds and scholarships paving their path to success and later help other unprivileged and talented people through the same platform.
+</p>
+          </div>
+        </section>
+
+<section class="section-donors">
+<div class="">
+  <h6>Donor</h6>
+  <p3>
+    Register as
+  </p3>
+    <a class="btn btn-donor"href="donor_final.html">DONOR</a> <br>
+  <p3> take a step Towards helping the underprivledge people in the rural areas of the country.<br></p3>
+  <p3>Our Platform provides you to help the rural section of the nation to develop and pave a path for a better tommorow of the nation. <br></p3>
+  <p3>Come join us in this journey of ours to make India a superpower. </p3>
+
+  <h6>Receiver</h6>
+  <p3> Register as</p3>
+  <a class="btn btn-receiver" href="Receiver_final.html"> RECEIVER</a> <br>
+  <p3> take a step Towards helping the underprivledge people in the rural areas of the country.<br></p3>
+  <p3>Our Platform provides you to help the rural section of the nation to develop and pave a path for a better tommorow of the nation. <br></p3>
+  <p3>Come join us in this journey of ours to make India a superpower. </p3>
+
+
+</div>
+
+
+</section>
+<!--
+<section class="section-help">
+
+</section>
+-->
+
+        <section class="section-testimonials" id = "quotes">
+            <div class="row">
+                <h4>our motivation &mdash; let's help</h4>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <blockquote>
+                      We call upon all governments to ensure free compulsory education all over the world for every child.  We realize the importance of light when we see darkness. We realize the importance of voice when we are silenced.
+                      <cite><img src="" alt="">Malala Yousafzai</cite>
+                    </blockquote>
+                </div>
+                <div class="col span-1-of-3">
+                    <blockquote>
+                       The paradox of education is precisely this - that as one begins to become conscious one begins to examine the society in which he is being educated.
+                        <cite><img src=".jpeg" alt="">James Baldwin</cite>
+                    </blockquote>
+                </div>
+                <div class="col span-1-of-3">
+                    <blockquote>
+Literacy in itself is no education. Literacy is not the end of education or even the beginning. By education I mean an all-round drawing out of the best in the child and man-body, mind and spirit.
+                    <cite><img src=".jpg" alt="">Mahatma Gandhi</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-team" id="team">
+            <div class="row">
+                <h2>The Team</h2>
+            </div>
+            <div class="row js--wp-3">
+                <div class="col span-1-of-4 box">
+                  <div class="container">
+                    <img src="AS.jpeg" alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="text">
+                      AS
+                      </div>
+                    </div>
+                  </div>
+                  <!--
+                    <img src="AS.jpeg" alt="as">
+-->
+                    <h5>Ankita Shil</h5>
+                    <div class="team-feature">
+                          B.Tech &vert; CSE
+                    </div>
+                    <div class="team-feature">
+                      Vel Tech
+                      shil.ankita99@gmail.com
+                    </div>
+
+              </div>
+                <div class="col span-1-of-4 box">
+
+                  <div class="container">
+                    <img src="PK.jpeg" alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="text">
+                      PK
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--
+                    <img src="PK.jpeg" alt="pk">
+                  -->
+                    <h5>Prakhar Katyayan</h5>
+                    <div class="team-feature">
+                        B.Tech &vert; CSE
+                    </div>
+                    <div class="team-feature">
+                          Vel Tech
+                          pkatyayan1999@gmail.com
+                    </div>
+
+                </div>
+                <div class="col span-1-of-4 box">
+                  <!--
+                    <img src="TS.jpeg" alt="ts">
+                  -->
+                  <div class="container">
+                    <img src="TS.jpeg" alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="text">
+                      TS
+                      </div>
+                    </div>
+                  </div>
+                    <h5>Tanmay Surana</h5>
+                    <div class="team-feature">
+                      B.Tech &vert; CSE
+                    </div>
+                    <div class="team-feature">
+                          Vel Tech
+                          tanmaysurana@gmail.com
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                  <!--
+                    <img src="DM.jpeg" alt="dm">
+                  -->
+                    <div class="container">
+                      <img src="DM.jpeg" alt="Avatar" class="image">
+                      <div class="overlay">
+                        <div class="text">
+                        DM
+                        </div>
+                      </div>
+                    </div>
+                    <h5>Divyansh Mittal</h5>
+                    <div class="team-feature">
+                        B.Tech &vert; CSE
+                    </div>
+                    <div class="team-feature">
+                          Vel Tech
+                          div.mittal419@gmail.com
+                    </div>
+                </div>
+            </div>
+          </section>
+
+<section class="section-faculty">
+  <div class="row">
+    <h2> the advisor </h2>
+  </div>
+  <div class="row js--wp-3">
+    <div  class="col span-1-of-4 box">
+      <img src="hod.jpg" alt="maam">
+      <h5>Dr. V. Srinivasa Rao </h5>
+      <div class="team-feature">
+            Head of Department &vert; CSE
+      </div>
+      <div class="team-feature">
+        Vel Tech
+    </div>
+  </div>
+  <div class="col span-1-of-4 box">
+    <img src="sm.jpg" alt="hod">
+    <h5>Dr. Shyamala Devi</h5>
+    <div class="team-feature">
+     Professor  &vert; CSE
+    </div>
+    <div class="team-feature">
+      Vel Tech
+    </div>
+  </div>
+ </section>
+
+  <footer class = "end" id = "foot">
+                       <div>
+                           <ul class="social-links">
+                               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                               <li><a href="#"><i class="fa fa-google"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                               <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                           </ul>
+                       </div>
+
+                   <div class="row">
+                       <p1>
+                           Copyright &copy;. All rights reserved.
+                       </p1>
+                   </div>
+               </footer>
+               <!--
+ <script src="jquery.waypoints.min.js"></script>
+               <script src="dymanic.js"></script>
+               <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+-->
+      </body>
+      </html>
